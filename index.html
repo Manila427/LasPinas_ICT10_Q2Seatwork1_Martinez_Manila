@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght
+    @400;600&display=swap" rel="stylesheet">
+    <title>Quarter 2 Seatwork 1</title>
+    <style>
+
+body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: Orbitron, sans-serif;
+            margin: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        .reactor {
+            width: 35px;
+            height: 35px;
+            background-color: lightblue;
+            border: 3px solid white;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        main {
+            background-color: white;
+            width: 350px;
+            max-width: 85%;
+            margin: 40px auto;
+            padding: 25px;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="button"] {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 25px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: navy;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>Glee club</h1>
+        <p>This club is for those who love to sing and perform</p>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your First Name"><br>
+            <input type="text" id="last_name" placeholder="Enter your Last Name"><br>
+            <input type="button" py-click="candidate_checker" value="Enter">
+        </form>
+        <div id="result"></div>
+    </main>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
